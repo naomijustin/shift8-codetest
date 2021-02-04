@@ -1,1 +1,42 @@
+/* ==============================================
+            Shift8 Code Test Stylesheet 
+=================================================*/
 
+/* ================= Global ====================== */
+
+body {
+    background-color: #101A60;
+    color: #101A60;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #101A60;
+}
+
+hr {
+    color: #101A60;
+}
+
+
+
+
+/* ====================== Grid ================== */
+
+#formGridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-self: center;
+    background-color: #FFF;
+    max-width: 800px;
+    margin: 0 auto; /* Centers in Page*/
+}
+
+.formGridItem {
+    grid-column: span 1 / 1; 
+    text-align: center;
+}
