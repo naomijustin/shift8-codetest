@@ -31,11 +31,55 @@
 <script>
 
     // Global Varibles
-    var stringValue = $("#originalWord").value;
+    
 
     // Function
     function removeDuplicates() {
-        alert("submit");
+        
+        // Capture Value of user's original string
+        var stringValue = document.getElementById("originalWord").value;
+
+        alert("Word: " + stringValue);
+        
+        // Initialize array to hold new string
+        var newString = "";
+    
+        // Modified String Value
+        var index = 0;
+
+        // Index Loop
+        for (i = 0; i < stringValue.length; i++) {
+
+
+            //  ================ Abandoned method ===============
+            // Secondary loop to check against
+            // for (a = 0; a < stringValue.length; a++) {
+            //     if (stringValue[i] == stringValue[j]) {
+            //         break;                                                          
+            //     }
+            //     if (stringValue[j] == stringValue[i]) {
+            //         newString
+            //         .push(stringValue[i]);;                                                          
+            //     } 
+            // }
+            
+
+
+            if (stringValue.lastIndexOf(stringValue[i]) == stringValue.indexOf(stringValue[i])) {
+                stringValue += stringValue[i];
+            }            
+        }
+
+        return newString;
+
+
+        alert(newString);
+       
+
+        
+        $("#newWord").val(newString);
+        
+        
     }
 
     $(document).ready( function () {
@@ -60,12 +104,12 @@
 
                 <!-- Input Form -->
 
-                <form onsubmit="removeDuplicates()">            
+                <form onsubmit="return false">            
                     <div class="form-group">
                       <label for="originalWord">Original Word</label>
-                      <input type="text" class="form-control" id="originalWord" placeholder="ie. apple">
+                      <input type="text" class="form-control" id="originalWord" placeholder="ie. apple" value="">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" onclick="removeDuplicates()">Submit</button>
                   </form>
                   <hr>
             </div>
@@ -76,8 +120,8 @@
                 
                 <!-- Output Form -->
                         
-                      <label for="exampleInputPassword1"><h2>Your New Word</h2></label>
-                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      <label for="newWord"><h2>Your New Word</h2></label>
+                      <input type="text" class="form-control" id="newWord" placeholder="" value="" readonly>
                     
             </div>
             
