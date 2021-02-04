@@ -1,20 +1,3 @@
-
-
-If you could please get your answers back before 3:30pm today. 
-
-Upon successful review we would like you to come in for a second round interview in our office tomorrow. 
-
-This would be before lunch which I will confirm the time. 
-
-
-
-
-
-
-
-
-
-
 # Naomi Justin: Shift8 Code Test | Task 2
  
 ## Contents
@@ -53,6 +36,12 @@ Ran the illustration through TinyPNG to optimize the file size.
   </tr>
  </table>
 
+## Code
+* In the actual application of the code for removing duplicate, I originally created a loop, and then inside a secondary loop to check against to find duplicates.
+* However, issues happened with displaying the code in the string and posting in the lower section of the form
+* Attempted to store in an array and push to the end of the array, then convert to a string, however did not successfully work
+* Finially, started to try the .split(), .filter(), and .join() methods however ran out of time while learning about these functions.
+
 ## Technologies
 * HTML
 * CSS
@@ -67,5 +56,5 @@ Ran the illustration through TinyPNG to optimize the file size.
 ## Launch
 * Deliver latest 3.30pm on 04/02/2021 via email.
 * Sending Task 1 via Google Doc and Task 2 via a link to a ZIP File, stored within Google Drive.
-* Publishing a hosted version on Github via link naomijustin.github.io/shift8-codetest
+* Publishing a hosted version on Github via link https://naomijustin.github.io/shift8-codetest
 
