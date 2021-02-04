@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Shift8 Code Test</title>
+ 
+    <!-- *** Links *** -->
+ 
+    <!-- Bootstrap    --> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Local Styles --> <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Favicon      --> <link rel="icon" href="https://www.shift8.com/wp-content/uploads/2019/03/Faviicon.png" sizes="16x16 32x32" type="image/png">
+    <!-- jQuery -->       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--<base href="/">-->
+    <base href="index.html" target="_self">
+</head>
+ 
+<body>
+ 
+<!-- jQuery, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+ 
+<!-- ============================= 
+                SCRIPT
+     =============================
+-->
+<script>
+
+    // Global Varibles
+    var stringValue = $("#originalWord").value;
+
+    // Function
+    function removeDuplicates() {
+        alert("submit");
+    }
+
+    $(document).ready( function () {
+        
+
+
+
+
+
+    }); //End DOM Ready
+</script>
+ 
+<!-- ============================= 
+            HTML MARKUP
+     =============================
+-->
+ 
+    <main>
+        <div id="formGridContainer">
+            <div class="formGridItem">
+                <h2>Remove Duplicates</h2>
+
+                <!-- Input Form -->
+
+                <form onsubmit="removeDuplicates()">            
+                    <div class="form-group">
+                      <label for="originalWord">Original Word</label>
+                      <input type="text" class="form-control" id="originalWord" placeholder="ie. apple">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                  <hr>
+            </div>
+
+            
+            
+            <div class="formGridItem">
+                
+                <!-- Output Form -->
+                        
+                      <label for="exampleInputPassword1"><h2>Your New Word</h2></label>
+                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    
+            </div>
+            
+            
+            <!--  -->
+
+
+        </div>
+    </main>
+ 
+</body>
+</html>
+ 
+
