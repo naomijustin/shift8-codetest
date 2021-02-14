@@ -41,6 +41,7 @@ Ran the illustration through TinyPNG to optimize the file size.
 * However, issues happened with displaying the code in the string and posting in the lower section of the form
 * Attempted to store in an array and push to the end of the array, then convert to a string, however did not successfully work
 * Finially, started to try the .split(), .filter(), and .join() methods however ran out of time while learning about these functions.
+* Ended up finding a solution via this documentation: https://www.tutorialrepublic.com/faq/how-to-remove-duplicate-values-from-a-javascript-array.php
 
 ## Technologies
 * HTML
