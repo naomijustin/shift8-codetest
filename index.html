@@ -30,7 +30,7 @@
 -->
 <script>
 
-    // Global Varibles
+    // =========== Global Varibles ===========
     
 
     // Function
@@ -39,15 +39,9 @@
         // Capture Value of Input Entered on Submit        
         var inputValue = $("#originalWord").val();                 
         
-        //Alert Original Word
-        //alert("Word: " + inputValue);
-
         // Split into Array
         var splitValue = inputValue.split("");
         
-        // Alert Array of Original Word
-        //alert("Split: " + splitValue); 
-
         // Storage of unique values
         var uniqueValues = [];
 
@@ -60,14 +54,8 @@
             }
         }
         
-        // Alert Filtered
-        //alert("Unique: " + uniqueValues);
-
         // Join Output from Array to a String
         var joinedOutput = uniqueValues.join("");
-        
-        // Alert Filtered
-        // alert("Joined " + joinedOutput);
         
         // ========== Input New Word into Input Field =========
         $("#newWord").val(joinedOutput);
@@ -75,13 +63,9 @@
     }
 
     $(document).ready( function () {
-        
-
-
-
-
 
     }); //End DOM Ready
+
 </script>
  
 <!-- ============================= 
