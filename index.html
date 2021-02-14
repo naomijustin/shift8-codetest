@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Meta Tags -->
@@ -11,7 +11,7 @@
     <!-- Bootstrap    --> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Font Awesome --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <!-- Local Styles --> <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <!-- Favicon      --> <link rel="icon" href="https://www.shift8.com/wp-content/uploads/2019/03/Faviicon.png" sizes="16x16 32x32" type="image/png">
+    <!-- Favicon      --> <link rel="icon" href="https://www.shift8.com/wp-content/uploads/2020/11/cropped-128_Black_S8Logo-32x32.png" sizes="16x16 32x32" type="image/png">
     <!-- jQuery -->       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!--<base href="/">-->
     <base href="index.html" target="_self">
@@ -35,51 +35,43 @@
 
     // Function
     function removeDuplicates() {
+
+        // Capture Value of Input Entered on Submit        
+        var inputValue = $("#originalWord").val();                 
         
-        // Capture Value of user's original string
-        var stringValue = document.getElementById("originalWord").value;
+        //Alert Original Word
+        //alert("Word: " + inputValue);
 
-        alert("Word: " + stringValue);
+        // Split into Array
+        var splitValue = inputValue.split("");
         
-        // Initialize array to hold new string
-        var newString = "";
-    
-        // Modified String Value
-        var index = 0;
+        // Alert Array of Original Word
+        //alert("Split: " + splitValue); 
 
-        // Index Loop
-        for (i = 0; i < stringValue.length; i++) {
+        // Storage of unique values
+        var uniqueValues = [];
 
+        // ==== Filter for Duplicates ====
 
-            //  ================ Abandoned method ===============
-            // Secondary loop to check against
-            // for (a = 0; a < stringValue.length; a++) {
-            //     if (stringValue[i] == stringValue[j]) {
-            //         break;                                                          
-            //     }
-            //     if (stringValue[j] == stringValue[i]) {
-            //         newString
-            //         .push(stringValue[i]);;                                                          
-            //     } 
-            // }
-            
-
-
-            if (stringValue.lastIndexOf(stringValue[i]) == stringValue.indexOf(stringValue[i])) {
-                stringValue += stringValue[i];
-            }            
+        // Loop through array values
+        for(i = 0; i < splitValue.length; i++){
+            if(uniqueValues.indexOf(splitValue[i]) === -1) {
+                uniqueValues.push(splitValue[i]);
+            }
         }
-
-        return newString;
-
-
-        alert(newString);
-       
-
         
-        $("#newWord").val(newString);
+        // Alert Filtered
+        //alert("Unique: " + uniqueValues);
+
+        // Join Output from Array to a String
+        var joinedOutput = uniqueValues.join("");
         
+        // Alert Filtered
+        // alert("Joined " + joinedOutput);
         
+        // ========== Input New Word into Input Field =========
+        $("#newWord").val(joinedOutput);
+
     }
 
     $(document).ready( function () {
